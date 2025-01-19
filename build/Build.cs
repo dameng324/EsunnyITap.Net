@@ -15,7 +15,7 @@ using static Nuke.Common.IO.PathConstruction;
 [GitHubActions(
     "publish",
     GitHubActionsImage.WindowsLatest,
-    On = new[] { GitHubActionsTrigger.Push },
+    OnPushTags = ["*"],
     ImportSecrets = new[] { nameof(NuGetApiKey) },
     InvokedTargets = new[] { nameof(Compile) }
 )]

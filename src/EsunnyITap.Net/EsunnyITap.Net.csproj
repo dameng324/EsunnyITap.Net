@@ -5,15 +5,15 @@
         <Nullable>enable</Nullable>
         <RepositoryType>git</RepositoryType>
         <LangVersion>preview</LangVersion>
+        <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net7.0'))">true</IsAotCompatible>
         <Version>1.0.0</Version>
         <PackageTags>Future;Esunny;Trade;CTP;China;Quant</PackageTags>
         <RepositoryUrl>https://github.com/dameng324/EsunnyITap.Net.git</RepositoryUrl>
         <PackageProjectUrl>https://github.com/dameng324/EsunnyITap.Net</PackageProjectUrl>
         <Title>EsunnyITap.Net</Title>
-        <Description>Esunny China Future Market and Trade Api Wrapper for .NET platform</Description>
+        <Description>Esunny Foreign Future Trade Api Wrapper for .NET platform</Description>
     </PropertyGroup>
 
     <ItemGroup>
