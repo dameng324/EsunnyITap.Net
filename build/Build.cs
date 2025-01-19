@@ -60,11 +60,10 @@ class Build : NukeBuild
             _.DependsOn(Restore)
                 .Executes(() =>
                 {
-                    DotNetTasks.DotNetBuild(s => s.SetProjectFile(Project).SetConfiguration(Configuration));
                     if (IsServerBuild && GitHubActions.Instance.RefType.Equals("tag", StringComparison.OrdinalIgnoreCase))
                     {
                         var tag = GitHubActions.Instance.Ref;
-                        var version= tag.Substring(tag.LastIndexOf('/') + 1);
+                        var version = tag.Substring(tag.LastIndexOf('/') + 1);
                         var outDir = Project.Directory / "bin" / Configuration;
                         outDir.CreateOrCleanDirectory();
                         DotNetTasks.DotNetPack(s =>
@@ -75,6 +74,10 @@ class Build : NukeBuild
                         DotNetTasks.DotNetNuGetPush(s =>
                             s.SetTargetPath(nupkg).SetSource("https://api.nuget.org/v3/index.json").SetApiKey(NuGetApiKey)
                         );
+                    }
+                    else
+                    {
+                        DotNetTasks.DotNetBuild(s => s.SetProjectFile(Project).SetConfiguration(Configuration));
                     }
                 });
 }

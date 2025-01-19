@@ -1,14 +1,15 @@
 # EsunnyTap.Net
 
-[![NuGet](https://img.shields.io/nuget/v/EsunnyTap.Net.svg)](https://www.nuget.org/packages/EsunnyTap.Net)
+[![NuGet](https://img.shields.io/nuget/v/EsunnyITap.Net.svg)](https://www.nuget.org/packages/EsunnyITap.Net)
 
-EsunnyITap.Net is a .NET library for the EsunnyITap Futures API. It is a wrapper of the EsunnyTap C++ API using swig.
+EsunnyITap.Net is a .NET library for the EsunnyITap Futures API which is popular worldwide future market trade api in China. 
+This project is a wrapper of the EsunnyITap C++ API using swig.
 
 Please read FAQ before using this library.[FAQ](#faq)
 
 ## Features
 
-- Support EsunnyITap Trade API which is popular world wide future market trade api in China
+- Support EsunnyITap Trade API
 - Support .Net framework 4.5 and .Net Standard 2.0 and Modern .Net6 and .Net8
 - Auto copy the native dlls to the output directory
 - Native AOT support
