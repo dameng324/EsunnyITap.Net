@@ -66,6 +66,12 @@ class Build : NukeBuild
                         var version = tag.Substring(tag.LastIndexOf('/') + 1);
                         var outDir = Project.Directory / "bin" / Configuration;
                         outDir.CreateOrCleanDirectory();
+                        DotNetTasks.DotNetBuild(s =>
+                            s.SetProjectFile(Project)
+                                .SetConfiguration(Configuration)
+                                .SetOutputDirectory(outDir)
+                                .SetProperty("Version", version)
+                        );
                         DotNetTasks.DotNetPack(s =>
                             s.SetProject(Project).SetConfiguration(Configuration).SetOutputDirectory(outDir).SetProperty("Version", version)
                         );
