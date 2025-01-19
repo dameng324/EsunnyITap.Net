@@ -1,0 +1,3 @@
+/mnt/c/Workspace/gitlab/EsunnyITap.Net/src/EsunnyITapApi/linux-build/CMakeFiles/EsunnyITapApi.dir
+/mnt/c/Workspace/gitlab/EsunnyITap.Net/src/EsunnyITapApi/linux-build/CMakeFiles/edit_cache.dir
+/mnt/c/Workspace/gitlab/EsunnyITap.Net/src/EsunnyITapApi/linux-build/CMakeFiles/rebuild_cache.dir
