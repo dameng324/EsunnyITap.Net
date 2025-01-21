@@ -72,9 +72,6 @@ class Build : NukeBuild
                                 .SetOutputDirectory(outDir)
                                 .SetProperty("Version", version)
                         );
-                        DotNetTasks.DotNetPack(s =>
-                            s.SetProject(Project).SetConfiguration(Configuration).SetOutputDirectory(outDir).SetProperty("Version", version)
-                        );
 
                         var nupkg = outDir.GlobFiles("*.nupkg").First();
                         DotNetTasks.DotNetNuGetPush(s =>
