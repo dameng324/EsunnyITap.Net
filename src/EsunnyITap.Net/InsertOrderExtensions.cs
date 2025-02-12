@@ -6,7 +6,7 @@ namespace EsunnyITap.Net;
 
 public static class InsertOrderExtensions
 {
-    public static unsafe int InsertOrder2(this ITapTradeAPI api, ref uint sessionID, TapAPINewOrder order)
+    public static int InsertOrder2(this ITapTradeAPI api, ref uint sessionID, TapAPINewOrder order)
     {
         return api.InsertOrder(ref sessionID, new SWIGTYPE_p_a_51__char(IntPtr.Zero, futureUse: false), order);
     }
