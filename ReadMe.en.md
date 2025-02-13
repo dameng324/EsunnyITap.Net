@@ -1,46 +1,47 @@
-# EsunnyITap.Net
+# EsunnyTap.Net
 
 [![NuGet](https://img.shields.io/nuget/v/EsunnyITap.Net.svg)](https://www.nuget.org/packages/EsunnyITap.Net)
 
 [English](ReadMe.en.md) | [中文](ReadMe.md)
 
-EsunnyITap.Net是一个易盛9.0外盘柜台接口的C#封装。它使用Swig技术将易盛的C++接口封装成C#接口。它支持易盛的交易接口。
+EsunnyITap.Net is a .NET library for the EsunnyITap Futures API which is popular worldwide future market trade api in China. 
+This project is a wrapper of the EsunnyITap C++ API using swig.
 
-## 主要功能
+Please read FAQ before using this library.[FAQ](#faq)
 
-- 支持外盘的交易接口。行情请使用[EsunnyTap.Net](https://github.com/dameng324/EsunnyTap.Net)
-- 支持.Net Framework 4.5和.Net Standard 2.0，以及.NET6和.NET8
-- 编译时会自动将依赖的dll拷贝到输出目录
-- 支持Native AOT编译，避免代码被反编译
-- 同时支持64位Windows和Linux。Mac/IOS/Android由于易盛官方并未发布对应的native dll，所以无法支持
+## Features
 
-## 常见问题
+- Support EsunnyITap Trade API, for quote, use [EsunnyTap.Net](https://github.com/dameng324/EsunnyTap.Net)
+- Support .Net framework 4.5 and .Net Standard 2.0 and Modern .Net6 and .Net8
+- Auto copy the native dlls to the output directory
+- Native AOT support
+- Support Windows x64 and Linux x64 
 
-### API版本是多少？
+## FAQ
+
+### The version of the EsunnyITap API?
 
 ITapTradeAPIVersion:Version iTapTradeAPI V9.3.7.4, Date 2022.02.14
 
-### Dll文件没有自动拷贝到输出目录
+### dll doesn't copy to the output directory?
 
-默认情况下编译后会拷贝到runtimes/目录下以适应不同的操作系统。如果你的程序只在特定的操作系统下运行，可以在项目csproj配置文件中配置特定的RuntimeIdentifier。
-- Windows: `<RuntimeIdentifier>win-x64</RuntimeIdentifier>`
-- Linux: `<RuntimeIdentifier>linux-x64</RuntimeIdentifier>`
+set `RuntimeIdentifier` to `win-x64` in the project file.
 
-### 存在中文乱码问题？
+### went to encoding issue?
 
-在调用所有接口之前尝试使用此接口
+try add the following code before using the API
 
 ```csharp
 SwigStringHelper.Register();
 ```
 
-## 安装
+## Installation
 
 ```bash
 dotnet add package EsunnyITap.Net
 ```
 
-## 用法
+## Usage
 
 ```csharp
 using System.Threading.Tasks;
@@ -114,11 +115,11 @@ public class TradeImpl : EsunnyITap.Net.ITapTradeAPINotify
 }
 ```
 
-## 打赏
+## Donate
 
-如果这个项目有帮助到你，请随意打赏
+If this project help you, please feel free to donate me:
+
 ![img.png](img.png)
-
 
 ## License
 
