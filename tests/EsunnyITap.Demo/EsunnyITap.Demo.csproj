@@ -10,7 +10,8 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-        <PackageReference Include="EsunnyITap.Net" Version="1.0.4-test3" />
+        <PackageReference Include="DotNetEnv" Version="3.1.1" />
+        <PackageReference Include="EsunnyITap.Net" Version="1.0.4-test4" />
         <PackageReference Include="System.Reactive" Version="6.0.1" />
   
 <!--    <ProjectReference Include="..\..\src\EsunnyITap.Net\EsunnyITap.Net.csproj" />-->

@@ -204,6 +204,8 @@ namespace ITapTrade
 	const TAPICommodityType     TAPI_COMMODITY_TYPE_DBET				= '3';
 	//! 港股--基金
 	const TAPICommodityType     TAPI_COMMODITY_TYPE_FUND				= '4';
+    //! 多腿套利
+    const TAPICommodityType     TAPI_COMMODITY_TYPE_MULTI_LEG           = '5';
 
 
     /** @}*/

@@ -91,6 +91,8 @@ namespace ITapTrade
 	const int			TAPIERROR_LOGIN_PROHIBIT_UNFREEZE					= 10035;
 	//不需要解冻-登录未冻结
 	const int			TAPIERROR_LOGIN_NONEED_UNFREEZE						= 10036;
+	//需要绑定TOTP信息
+	const int			TAPIERROR_LOGIN_TOTP_NEEDBINDING					= 10040;
 
 	//!	二次验证失败
 	const int			TAPIERROR_SECONDCERTIFICATION_FAIL 					= 14001;
@@ -473,7 +475,78 @@ namespace ITapTrade
 	const int			TAPIERROR_GW_SEND_FAIL 								= 80010;
     //! 被上手拒绝
 	const int			TAPIERROR_GW_REJ_BYUPPER 							= 80011;
-
+	//发送数据失败
+	const int			TAPIERROR_GW_NEW_ORDER_SEND							= 81001;
+	//发送报单失败，网关没连接到交易所
+	const int			TAPIERROR_GW_NEW_DLG_NULL							= 81002;
+	//报单字段有误
+	const int			TAPIERROR_GW_NEW_ORDER_FIELD						= 81003;
+	//被上手拒绝
+	const int			TAPIERROR_GW_NEW_TRADE_REJ_BYUPPER					= 81004;
+	//当前时间不允许发送行权申请
+	const int			TAPIERROR_GW_NEW_ORDER_FORBIDEXEC					= 81005;
+	//报单合约错误
+	const int			TAPIERROR_GW_NEW_ORDERINSERT_CONTRACT				= 81006;
+	//找不到资金账号
+	const int			TAPIERROR_GW_NEW_ORDERINSERT_ACCOUNT				= 81007;
+	//一次请求太多数据
+	const int			TAPIERROR_GW_NEW_DEEPQOUTE_TOOMANYDATA				= 81008;
+	//上手号错误
+	const int			TAPIERROR_GW_NEW_UPPER_UPPERNO						= 81009;
+	//上手通道号错误
+	const int			TAPIERROR_GW_NEW_UPPER_UPPERCHANNELNO				= 81010;
+	//上手用户号错误
+	const int			TAPIERROR_GW_NEW_UPPER_UPPERUSERNO					= 81011;
+	//服务器标识重复
+	const int			TAPIERROR_GW_NEW_UPPER_DUPLICATE					= 81012;
+	//撤单找不到原始委托
+	const int			TAPIERROR_GW_NEW_ORDERNOTFIND						= 81013;
+	//超过数据流控
+	const int			TAPIERROR_GW_NEW_ORDERREQ_TOOMANY					= 81014;
+	//不支持的订单类型
+	const int			TAPIERROR_GW_NEW_UPPER_ORDERTYPE					= 81015;
+	//订单操作找不到原始委托
+	const int			TAPIERROR_GW_NEW_ORDEROPERATE_NOORDER				= 81016;
+	//非做市商网关不允许应价
+	const int			TAPIERROR_GW_NEW_UPPER_NOTALLOWRSPQOUTE				= 81017;
+	//找不到交易编码
+	const int			TAPIERROR_GW_NEW_UPPER_TRADENO						= 81018;
+	//本地编号超过了最大值
+	const int			TAPIERROR_GW_NEW_INVALID_LOCALNO					= 81019;
+	//品种错误
+	const int			TAPIERROR_GW_NEW_INVALID_COMMODITY					= 81020;
+	//品种类型不支持
+	const int			TAPIERROR_GW_NEW_UNSUPPORT_COMMODITY_TYPE			= 81021;
+	//价格不合法
+	const int		    TAPIERROR_GW_NEW_INVALID_PRICE						= 81022;
+	//数量不合法
+	const int			TAPIERROR_GW_NEW_INVALID_VOLUME						= 81023;
+	//委托模式不合法
+	const int			TAPIERROR_GW_NEW_TIMEINFORCE_MODE					= 81024;
+	//买卖方向不合法
+	const int		    TAPIERROR_GW_NEW_INVALID_DIRECTION					= 81025;
+	//开平标志不合法
+	const int		    TAPIERROR_GW_NEW_INVALID_POSITIONEFFECT				= 81026;
+	//投机套保标志不合法
+	const int		    TAPIERROR_GW_NEW_INVALID_HEDGEFLAG					= 81027;
+	//已经存在有效询价
+	const int			TAPIERROR_GW_NEW_REQQUOTE_EXISIT					= 81028;
+	//没有查询到相应的设置
+	const int			TAPIERROR_GW_NEW_RRYOFFSET_NODATA					= 81029;
+	//改单委托信息没有变化
+	const int			TAPIERROR_GW_NEW_ORDERMODIFY_SAME					= 81030;
+	//报价价位查询没有数据
+	const int			TAPIERROR_GW_NEW_DEEPQUOTE_NOQUOTE					= 81031;
+	//已经存在有效库存查询
+	const int			TAPIERROR_GW_NEW_STORAGEREQ_EXISIT					= 81032;
+	//上次库存查询未结束
+	const int			TAPIERROR_GW_NEW_STORAGEREQ_NOTFINISH				= 81033;
+	//到上手查询数据返回失败
+	const int			TAPIERROR_GW_NEW_QRYRSP								= 81034;
+	//不支持请求类型
+	const int			TAPIERROR_GW_NEW_INVALID_REQUEST					= 81035;
+	//当前时间不支持此类操作
+	const int			TAPIERROR_GW_NEW_INVALID_TIME						= 81036;
 	//=============================================================================
 	/**
 	*	\addtogroup G_ERR_FRONT_SERVICE		前置返回错误
@@ -555,7 +628,7 @@ namespace ITapTrade
 	const int TAPIERROR_ORDER_FREQUENCY						 				= -22;
 	//! 查询频率太快。
 	const int TAPIERROR_RENTQRY_TOOFAST										= -23;
-	//! 不符合调用条件。
+	//! 不符合调用条件，需要先请求二次认证验证码
 	const int TAPIERROR_CALL_NOCONDITION									= -24;
 	//! 改单撤单时没有找到对应订单。
 	const int TAPIERROR_ORDER_NOTFOUND										= -25;
@@ -613,6 +686,12 @@ namespace ITapTrade
 	//! 查询历史数据的时间区间最多31天
 	const int TAPIERROR_HISDATA_DAYS										= -59;
 
+	//!	解冻重置仅支持身份验证的手机号
+	const int TAPIERROR_UNFREERESET_ERROR_CONTACT							= -60;
+	//! 验证码认证成功，请设置新密码
+	const int TAPIERROR_VERTIFICATE_SUCCESS									= -61;
+	//! 重置密码成功，请重新登录
+	const int TAPIERROR_RESETPASSWORD_SUCCESS								= -62;
 	//=============================================================================
 	/**
 	 * \addtogroup G_ERR_STOCK_CHECK ETF系统错误号
@@ -765,6 +844,8 @@ namespace ITapTrade
     const int TAPIERROR_INPUTERROR_QryHisQuoteParam                        = -13001;
 	//! 价格和数量中包含NAN或者INF不合法的数值
 	const int TAPIERROR_INPUTERROR_TAPIIncludeNAN							= -13002;
+	//! 价格不符合最小变动价位精度
+	const int TAPIERROR_INPUTERROR_OutOfPriceTick							= -13003;
 	//! 输入错误的到期日
 	const  int TAPIERROR_INPUTERROR_TAPIExpireTime							= -12047;
 	//! 错误的密码类型
@@ -785,7 +866,13 @@ namespace ITapTrade
 	const int TAPIERROR_INPUTERROR_TapAPIApplyTypeType						= -12055;
 	//! 输入错误的:TAPIDATE
 	const int TAPIERROR_INPUTERROR_TAPIDATE									= -12056;
-	
+	//! 输入错误的:TapAPIPasswordOpreateTypeType
+	const int TAPIERROR_INPUTERROR_TapAPIPasswordOpreateTypeType			= -12057; 
+	//! 输入错误的:TapAPIPasswordOpreateTypeType
+	const int TAPIERROR_INPUTERROR_TapAPICertificateTypeType				= -12058;
+	//! 输入错误的委托量
+	const int TAPIERROR_INPUTERROR_OrderQty									= -12059;
+
 	
     /** @}*/
 

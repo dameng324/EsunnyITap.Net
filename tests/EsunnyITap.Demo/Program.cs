@@ -43,7 +43,7 @@ try
     var login = new TapAPITradeLoginAuth
     {
         ISModifyPassword = EsunnyITapApi.APIYNFLAG_NO,
-        UserNo = "Q123456789",
+        UserNo = "Q1352608252",
         Password = "123456",
     };
     ret = api.Login(login);
@@ -129,19 +129,19 @@ public class TradeImpl : EsunnyITap.Net.ITapTradeAPINotify
 
     public override void OnRspLogin(int errorCode, TapAPITradeLoginRspInfo loginRspInfo)
     {
-        Console.WriteLine($"OnRspLogin errorCode:{errorCode} loginRspInfo:{loginRspInfo}");
+        Console.WriteLine($"OnRspLogin errorCode:{ErrorCodeMap.GetErrorMsg(errorCode)} loginRspInfo:{loginRspInfo}");
     }
 
     public override void OnDisconnect(int reasonCode)
     {
-        Console.WriteLine($"OnDisconnect reasonCode:{reasonCode}");
+        Console.WriteLine($"OnDisconnect reasonCode:{ErrorCodeMap.GetErrorMsg(reasonCode)}");
     }
 
     public Subject<int> OnAPIReadySubject = new();
 
     public override void OnAPIReady(int errorCode)
     {
-        Console.WriteLine($"OnAPIReady errorCode:{errorCode}");
+        Console.WriteLine($"OnAPIReady errorCode:{ErrorCodeMap.GetErrorMsg(errorCode)}");
         OnAPIReadySubject.OnNext(errorCode);
     }
 

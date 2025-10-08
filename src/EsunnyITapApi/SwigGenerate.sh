@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
+set -e
 # 获取脚本所在目录的绝对路径
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
@@ -12,4 +13,9 @@ if [ "$SCRIPT_DIR" != "$CURRENT_DIR" ]; then
     exit 1
 fi
 
-mkdir -p ../EsunnyITap.Net/Swig && swig -c++ -csharp -namespace EsunnyITap.Net -outdir ../EsunnyITap.Net/Swig/ swig.i
+bash convert-header-to-utf8.sh ./include && \
+mkdir -p ../EsunnyITap.Net/Swig && swig -c++ -csharp -namespace EsunnyITap.Net -outdir ../EsunnyITap.Net/Swig/ swig.i && \
+sed -E 's/.*EsunnyITapApiPINVOKE\.ITapTradeAPINotify_On.*\(.*\);//g' -i ../EsunnyITap.Net/Swig/ITapTradeAPINotify.cs && \
+sed -E 's/if \(SwigDerivedClassHasMethod\(\".*\"\, swigMethodTypes.*\)\)//g' -i ../EsunnyITap.Net/Swig/ITapTradeAPINotify.cs && \
+csharpier format ../EsunnyITap.Net/Swig && \
+bash gen-error-map-cs.sh 

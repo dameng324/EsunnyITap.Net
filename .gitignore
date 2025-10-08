@@ -399,3 +399,6 @@ FodyWeavers.xsd
 .idea/
 /src/EsunnyTapApi/win-build
 /src/EsunnyTapApi/linux-build
+/src/EsunnyITapApi/linux-build
+/src/EsunnyITapApi/win-build
+*.local

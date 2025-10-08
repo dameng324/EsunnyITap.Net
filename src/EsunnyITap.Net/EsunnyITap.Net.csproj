@@ -9,7 +9,7 @@
         <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net7.0'))">true</IsAotCompatible>
-        <Version>1.0.4-test3</Version>
+        <Version>1.0.4-test4</Version>
         <PackageTags>Future;Esunny;Trade;CTP;China;Quant</PackageTags>
         <RepositoryUrl>https://github.com/dameng324/EsunnyITap.Net.git</RepositoryUrl>
         <PackageProjectUrl>https://github.com/dameng324/EsunnyITap.Net</PackageProjectUrl>
