@@ -21,7 +21,7 @@ Please read FAQ before using this library.[FAQ](#faq)
 
 ### The version of the EsunnyITap API?
 
-ITapTradeAPIVersion:Version iTapTradeAPI V9.3.7.4, Date 2022.02.14
+ITapTradeAPIVersion:Version iTapTradeAPI V9.3.9.10, Date 2025.03.20
 
 ### dll doesn't copy to the output directory?
 

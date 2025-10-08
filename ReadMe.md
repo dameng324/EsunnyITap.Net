@@ -18,7 +18,7 @@ EsunnyITap.Net是一个易盛9.0外盘柜台接口的C#封装。它使用Swig技
 
 ### API版本是多少？
 
-ITapTradeAPIVersion:Version iTapTradeAPI V9.3.7.4, Date 2022.02.14
+ITapTradeAPIVersion:iTapTradeAPI V9.3.9.10, Date 2025.03.20
 
 ### Dll文件没有自动拷贝到输出目录
 
