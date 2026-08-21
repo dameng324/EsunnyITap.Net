@@ -1,3 +1,0 @@
-C:/Workspace/gitlab/EsunnyITap.Net/src/EsunnyITapApi/win-build/CMakeFiles/EsunnyITapApi.dir
-C:/Workspace/gitlab/EsunnyITap.Net/src/EsunnyITapApi/win-build/CMakeFiles/ALL_BUILD.dir
-C:/Workspace/gitlab/EsunnyITap.Net/src/EsunnyITapApi/win-build/CMakeFiles/ZERO_CHECK.dir
