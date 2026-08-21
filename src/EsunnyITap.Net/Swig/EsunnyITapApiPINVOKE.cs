@@ -846,8 +846,23 @@ class EsunnyITapApiPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_SPOT_ROOT_COMMODITY_get___")]
   public static extern int TAPIERROR_SPOT_ROOT_COMMODITY_get();
 
-  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAIERROR_SPOT_ROOTCOM_TRADEROUTE_get___")]
-  public static extern int TAIERROR_SPOT_ROOTCOM_TRADEROUTE_get();
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_SPOT_ROOTCOM_TRADEROUTE_get___")]
+  public static extern int TAPIERROR_SPOT_ROOTCOM_TRADEROUTE_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_SPOT_POSITIONMAX_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_SPOT_POSITIONMAX_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_MAX_INFO_IN_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_MAX_INFO_IN_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_ORDERQTY_ZERO_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_ORDERQTY_ZERO_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_MAINLAND_NOPEN_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_MAINLAND_NOPEN_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_USER_EXCEED_NO_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_USER_EXCEED_NO_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_NOTENOUGHFUND_get___")]
   public static extern int TAPIERROR_ORDERINSERT_NOTENOUGHFUND_get();
@@ -873,11 +888,11 @@ class EsunnyITapApiPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_RISKARRAY_get___")]
   public static extern int TAPIERROR_ORDERINSERT_RISKARRAY_get();
 
-  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAIERROR_ORDERINSERT_BUYLIMITE_get___")]
-  public static extern int TAIERROR_ORDERINSERT_BUYLIMITE_get();
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_BUYLIMITE_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_BUYLIMITE_get();
 
-  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAIERROR_ORDERINSERT_GROUP_BUYLIMITE_get___")]
-  public static extern int TAIERROR_ORDERINSERT_GROUP_BUYLIMITE_get();
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_GROUP_BUYLIMITE_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_GROUP_BUYLIMITE_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERDELETE_NOT_SYSNO_get___")]
   public static extern int TAPIERROR_ORDERDELETE_NOT_SYSNO_get();
@@ -906,14 +921,47 @@ class EsunnyITapApiPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERMODIFY_ERROR_READY_get___")]
   public static extern int TAPIERROR_ORDERMODIFY_ERROR_READY_get();
 
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERMODIFY_ERROR_BIGER_get___")]
+  public static extern int TAPIERROR_ORDERMODIFY_ERROR_BIGER_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERMODIFY_ERROR_OTC_get___")]
+  public static extern int TAPIERROR_ORDERMODIFY_ERROR_OTC_get();
+
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINPUT_CANNOTMOVE_get___")]
   public static extern int TAPIERROR_ORDERINPUT_CANNOTMOVE_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_QFII_OFF_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_QFII_OFF_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_NO_TRADENO_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_NO_TRADENO_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_TRADENO_NOSET_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_TRADENO_NOSET_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_TRADENO_NEEDOFF_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_TRADENO_NEEDOFF_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINPUT_REPEAT_get___")]
   public static extern int TAPIERROR_ORDERINPUT_REPEAT_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_CONTRACT_QUOTE_get___")]
   public static extern int TAPIERROR_CONTRACT_QUOTE_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_IN_PRICE_LIMIT_PRICE_ERROR_get___")]
+  public static extern int TAPIERROR_ORDER_IN_PRICE_LIMIT_PRICE_ERROR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_INSERT_PRICE24_ERROR_get___")]
+  public static extern int TAPIERROR_ORDER_INSERT_PRICE24_ERROR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_INSERT_C_PRICE24_ERROR_get___")]
+  public static extern int TAPIERROR_ORDER_INSERT_C_PRICE24_ERROR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_INSERT_CONFIRM_ERROR_get___")]
+  public static extern int TAPIERROR_ORDER_INSERT_CONFIRM_ERROR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_CONFIRM_NOORDER_ERROR_get___")]
+  public static extern int TAPIERROR_CONFIRM_NOORDER_ERROR_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_UPPER_ONCEMAX_get___")]
   public static extern int TAPIERROR_UPPER_ONCEMAX_get();
@@ -926,6 +974,21 @@ class EsunnyITapApiPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_POSMAX_COM_NET_get___")]
   public static extern int TAPIERROR_ORDERINSERT_POSMAX_COM_NET_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_POSMAX_MARKET_VAL_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_POSMAX_MARKET_VAL_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_STOCKINSERT_HK_ORDERMAX_QTY_get___")]
+  public static extern int TAPIERROR_STOCKINSERT_HK_ORDERMAX_QTY_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_G_POSITIONMAX_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_G_POSITIONMAX_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_G_POSMAX_COM_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_G_POSMAX_COM_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_G_POSMAX_COM_NET_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_G_POSMAX_COM_NET_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_CLOSEMODE_get___")]
   public static extern int TAPIERROR_ORDERINSERT_CLOSEMODE_get();
@@ -941,6 +1004,9 @@ class EsunnyITapApiPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_CLOSE_SPOT_OUT_NULL_get___")]
   public static extern int TAPIERROR_CLOSE_SPOT_OUT_NULL_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_CLOSE_ORDER_QFII_NOEH_get___")]
+  public static extern int TAPIERROR_CLOSE_ORDER_QFII_NOEH_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_MOD_DEL_NO_ORDER_get___")]
   public static extern int TAPIERROR_MOD_DEL_NO_ORDER_get();
@@ -1068,8 +1134,38 @@ class EsunnyITapApiPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_INSERT_RISK_CLOSE_get___")]
   public static extern int TAPIERROR_ORDER_INSERT_RISK_CLOSE_get();
 
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_INSERT_SECTOR_RIGHT_ERROR_get___")]
+  public static extern int TAPIERROR_ORDER_INSERT_SECTOR_RIGHT_ERROR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_INSERT_EXCHGRIGHT_ERROR_get___")]
+  public static extern int TAPIERROR_ORDER_INSERT_EXCHGRIGHT_ERROR_get();
+
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_LOANAMOUNT_get___")]
   public static extern int TAPIERROR_ORDERINSERT_LOANAMOUNT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_FROZENSTOCK_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_FROZENSTOCK_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_INSERT_BIGER_RIGHT_get___")]
+  public static extern int TAPIERROR_ORDER_INSERT_BIGER_RIGHT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_INSERT_EXCEED_RIGHT_get___")]
+  public static extern int TAPIERROR_ORDER_INSERT_EXCEED_RIGHT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_INSERT_EXCEED_AMOUNT_get___")]
+  public static extern int TAPIERROR_ORDER_INSERT_EXCEED_AMOUNT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_REVIEW_EXCEED_AMOUNT_get___")]
+  public static extern int TAPIERROR_ORDER_REVIEW_EXCEED_AMOUNT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERREVIEW_NOTFOUND_ERROR_get___")]
+  public static extern int TAPIERROR_ORDERREVIEW_NOTFOUND_ERROR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_REVIEW_REFUSE_ERROR_get___")]
+  public static extern int TAPIERROR_ORDER_REVIEW_REFUSE_ERROR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDER_REVIEW_RIGHT_ERROR_get___")]
+  public static extern int TAPIERROR_ORDER_REVIEW_RIGHT_ERROR_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_COMBINE_COMMODITY_get___")]
   public static extern int TAPIERROR_COMBINE_COMMODITY_get();
@@ -1124,6 +1220,39 @@ class EsunnyITapApiPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_MAIN_MARGIN_get___")]
   public static extern int TAPIERROR_ORDERINSERT_MAIN_MARGIN_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_OTCT_CBROKERNO_N_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_OTCT_CBROKERNO_N_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_OTCT_CACCOUNTNO_N_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_OTCT_CACCOUNTNO_N_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_OTCT_BUY_CONFIRM_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_OTCT_BUY_CONFIRM_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_OMNIBUS_TRADENO_N_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_OMNIBUS_TRADENO_N_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_ACCBCANSTATE_ERR_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_ACCBCANSTATE_ERR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_ACCBCAN_NO_APY_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_ACCBCAN_NO_APY_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_ACCBCAN_NO_CONFIRM_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_ACCBCAN_NO_CONFIRM_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_GREY_NO_OPEN_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_GREY_NO_OPEN_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_OMNIBUS_ID_ERROR_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_OMNIBUS_ID_ERROR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_OMNIBUS_ID_ZERO_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_OMNIBUS_ID_ZERO_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_ORDERINSERT_COMMODITY_SUSP_get___")]
+  public static extern int TAPIERROR_ORDERINSERT_COMMODITY_SUSP_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_GW_NOT_READY_get___")]
   public static extern int TAPIERROR_GW_NOT_READY_get();
@@ -1302,6 +1431,12 @@ class EsunnyITapApiPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_TRADEFRONT_DELETEFORCE_get___")]
   public static extern int TAPIERROR_TRADEFRONT_DELETEFORCE_get();
 
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_TRADEFRONT_FROBIBITDIGITAL_get___")]
+  public static extern int TAPIERROR_TRADEFRONT_FROBIBITDIGITAL_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_TRADEFRONT_MAINLANDONLYCLOSE_get___")]
+  public static extern int TAPIERROR_TRADEFRONT_MAINLANDONLYCLOSE_get();
+
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_SUCCEED_get___")]
   public static extern int TAPIERROR_SUCCEED_get();
 
@@ -1460,6 +1595,15 @@ class EsunnyITapApiPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_RESETPASSWORD_SUCCESS_get___")]
   public static extern int TAPIERROR_RESETPASSWORD_SUCCESS_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_TRADENO_NEEDED_get___")]
+  public static extern int TAPIERROR_TRADENO_NEEDED_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_TRADENO_NOTNEEDED_get___")]
+  public static extern int TAPIERROR_TRADENO_NOTNEEDED_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_TRADENO_ERROR_MODIFY_get___")]
+  public static extern int TAPIERROR_TRADENO_ERROR_MODIFY_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPIERROR_GATHERINFO_NORELAY_get___")]
   public static extern int TAPIERROR_GATHERINFO_NORELAY_get();
@@ -1875,11 +2019,47 @@ class EsunnyITapApiPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_CHANNEL_get___")]
   public static extern char TAPI_ORDER_SOURCE_CHANNEL_get();
 
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_BLOOMBERG_get___")]
+  public static extern char TAPI_ORDER_SOURCE_BLOOMBERG_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_AUTOPHONE_get___")]
+  public static extern char TAPI_ORDER_SOURCE_AUTOPHONE_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_GIVEUP_get___")]
+  public static extern char TAPI_ORDER_SOURCE_GIVEUP_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_EXERCISE_get___")]
+  public static extern char TAPI_ORDER_SOURCE_EXERCISE_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_TAKEUP_get___")]
+  public static extern char TAPI_ORDER_SOURCE_TAKEUP_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_ERRORADJUST_get___")]
+  public static extern char TAPI_ORDER_SOURCE_ERRORADJUST_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_BROKER_ETRADER_get___")]
+  public static extern char TAPI_ORDER_SOURCE_BROKER_ETRADER_get();
+
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_TEMPORARY_get___")]
   public static extern char TAPI_ORDER_SOURCE_TEMPORARY_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_PROGRAMMANUAL_get___")]
   public static extern char TAPI_ORDER_SOURCE_PROGRAMMANUAL_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_OTC_get___")]
+  public static extern char TAPI_ORDER_SOURCE_OTC_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_EXCHANGEPHYSICALS_get___")]
+  public static extern char TAPI_ORDER_SOURCE_EXCHANGEPHYSICALS_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_FUNDREDEMPTION_get___")]
+  public static extern char TAPI_ORDER_SOURCE_FUNDREDEMPTION_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_POSITIONMAINTFEE_get___")]
+  public static extern char TAPI_ORDER_SOURCE_POSITIONMAINTFEE_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_SOURCE_ORDERER_get___")]
+  public static extern char TAPI_ORDER_SOURCE_ORDERER_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_ORDER_TIMEINFORCE_GFD_get___")]
   public static extern char TAPI_ORDER_TIMEINFORCE_GFD_get();
@@ -2057,6 +2237,21 @@ class EsunnyITapApiPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_MATCH_SOURCE_PROGRAMMANUAL_get___")]
   public static extern char TAPI_MATCH_SOURCE_PROGRAMMANUAL_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_MATCH_SOURCE_OTC_get___")]
+  public static extern char TAPI_MATCH_SOURCE_OTC_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_MATCH_SOURCE_EXCHANGEPHYSICALS_get___")]
+  public static extern char TAPI_MATCH_SOURCE_EXCHANGEPHYSICALS_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_MATCH_SOURCE_FUNDREDEMPTION_get___")]
+  public static extern char TAPI_MATCH_SOURCE_FUNDREDEMPTION_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_MATCH_SOURCE_POSITIONMAINTFEE_get___")]
+  public static extern char TAPI_MATCH_SOURCE_POSITIONMAINTFEE_get();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_MATCH_SOURCE_ORDERER_get___")]
+  public static extern char TAPI_MATCH_SOURCE_ORDERER_get();
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TAPI_CLOSE_MODE_NONE_get___")]
   public static extern char TAPI_CLOSE_MODE_NONE_get();
@@ -2721,6 +2916,12 @@ class EsunnyITapApiPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPINewOrder_ClientLocationID_get___")]
   public static extern string TapAPINewOrder_ClientLocationID_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPINewOrder_TradeNo_set___")]
+  public static extern void TapAPINewOrder_TradeNo_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPINewOrder_TradeNo_get___")]
+  public static extern string TapAPINewOrder_TradeNo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_new_TapAPINewOrder__SWIG_0___")]
   public static extern global::System.IntPtr new_TapAPINewOrder__SWIG_0();
 
@@ -3125,6 +3326,12 @@ class EsunnyITapApiPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIOrderInfo_ClientLocationID_get___")]
   public static extern string TapAPIOrderInfo_ClientLocationID_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIOrderInfo_TradeNo_set___")]
+  public static extern void TapAPIOrderInfo_TradeNo_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIOrderInfo_TradeNo_get___")]
+  public static extern string TapAPIOrderInfo_TradeNo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_new_TapAPIOrderInfo__SWIG_0___")]
   public static extern global::System.IntPtr new_TapAPIOrderInfo__SWIG_0();
@@ -5330,6 +5537,36 @@ class EsunnyITapApiPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_TriggerPriceType_get___")]
   public static extern char TapAPIHisOrderQryRsp_TriggerPriceType_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_ClientLocalIP_set___")]
+  public static extern void TapAPIHisOrderQryRsp_ClientLocalIP_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_ClientLocalIP_get___")]
+  public static extern string TapAPIHisOrderQryRsp_ClientLocalIP_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_ClientMac_set___")]
+  public static extern void TapAPIHisOrderQryRsp_ClientMac_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_ClientMac_get___")]
+  public static extern string TapAPIHisOrderQryRsp_ClientMac_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_ClientIP_set___")]
+  public static extern void TapAPIHisOrderQryRsp_ClientIP_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_ClientIP_get___")]
+  public static extern string TapAPIHisOrderQryRsp_ClientIP_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_SuperiorAccount_set___")]
+  public static extern void TapAPIHisOrderQryRsp_SuperiorAccount_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_SuperiorAccount_get___")]
+  public static extern string TapAPIHisOrderQryRsp_SuperiorAccount_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_ClientOrderNo_set___")]
+  public static extern void TapAPIHisOrderQryRsp_ClientOrderNo_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIHisOrderQryRsp_ClientOrderNo_get___")]
+  public static extern string TapAPIHisOrderQryRsp_ClientOrderNo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_new_TapAPIHisOrderQryRsp__SWIG_0___")]
   public static extern global::System.IntPtr new_TapAPIHisOrderQryRsp__SWIG_0();
@@ -7623,6 +7860,12 @@ class EsunnyITapApiPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIOrderLocalInputReq_LowerAccount_get___")]
   public static extern string TapAPIOrderLocalInputReq_LowerAccount_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIOrderLocalInputReq_TradeNo_set___")]
+  public static extern void TapAPIOrderLocalInputReq_TradeNo_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPIOrderLocalInputReq_TradeNo_get___")]
+  public static extern string TapAPIOrderLocalInputReq_TradeNo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_new_TapAPIOrderLocalInputReq__SWIG_0___")]
   public static extern global::System.IntPtr new_TapAPIOrderLocalInputReq__SWIG_0();
 
@@ -9348,6 +9591,102 @@ class EsunnyITapApiPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_delete_TapAPIExchangeStateInfoQryRsp___")]
   public static extern void delete_TapAPIExchangeStateInfoQryRsp(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryReq_AccountNo_set___")]
+  public static extern void TapAPISpanMarginQryReq_AccountNo_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryReq_AccountNo_get___")]
+  public static extern string TapAPISpanMarginQryReq_AccountNo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryReq_BeginDate_set___")]
+  public static extern void TapAPISpanMarginQryReq_BeginDate_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryReq_BeginDate_get___")]
+  public static extern string TapAPISpanMarginQryReq_BeginDate_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryReq_EndDate_set___")]
+  public static extern void TapAPISpanMarginQryReq_EndDate_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryReq_EndDate_get___")]
+  public static extern string TapAPISpanMarginQryReq_EndDate_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_new_TapAPISpanMarginQryReq__SWIG_0___")]
+  public static extern global::System.IntPtr new_TapAPISpanMarginQryReq__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_new_TapAPISpanMarginQryReq__SWIG_1___")]
+  public static extern global::System.IntPtr new_TapAPISpanMarginQryReq__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_delete_TapAPISpanMarginQryReq___")]
+  public static extern void delete_TapAPISpanMarginQryReq(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_SerialID_set___")]
+  public static extern void TapAPISpanMarginQryRsp_SerialID_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_SerialID_get___")]
+  public static extern uint TapAPISpanMarginQryRsp_SerialID_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_Date_set___")]
+  public static extern void TapAPISpanMarginQryRsp_Date_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_Date_get___")]
+  public static extern string TapAPISpanMarginQryRsp_Date_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_AccountNo_set___")]
+  public static extern void TapAPISpanMarginQryRsp_AccountNo_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_AccountNo_get___")]
+  public static extern string TapAPISpanMarginQryRsp_AccountNo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_CurrencyGroupNo_set___")]
+  public static extern void TapAPISpanMarginQryRsp_CurrencyGroupNo_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_CurrencyGroupNo_get___")]
+  public static extern string TapAPISpanMarginQryRsp_CurrencyGroupNo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_CurrencyNo_set___")]
+  public static extern void TapAPISpanMarginQryRsp_CurrencyNo_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_CurrencyNo_get___")]
+  public static extern string TapAPISpanMarginQryRsp_CurrencyNo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_InitalMargin_set___")]
+  public static extern void TapAPISpanMarginQryRsp_InitalMargin_set(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_InitalMargin_get___")]
+  public static extern double TapAPISpanMarginQryRsp_InitalMargin_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_MaintenanceMargin_set___")]
+  public static extern void TapAPISpanMarginQryRsp_MaintenanceMargin_set(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_MaintenanceMargin_get___")]
+  public static extern double TapAPISpanMarginQryRsp_MaintenanceMargin_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_OriginalMargin_set___")]
+  public static extern void TapAPISpanMarginQryRsp_OriginalMargin_set(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_OriginalMargin_get___")]
+  public static extern double TapAPISpanMarginQryRsp_OriginalMargin_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_ExchangeNo_set___")]
+  public static extern void TapAPISpanMarginQryRsp_ExchangeNo_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_ExchangeNo_get___")]
+  public static extern string TapAPISpanMarginQryRsp_ExchangeNo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_SPANGroupNo_set___")]
+  public static extern void TapAPISpanMarginQryRsp_SPANGroupNo_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_TapAPISpanMarginQryRsp_SPANGroupNo_get___")]
+  public static extern string TapAPISpanMarginQryRsp_SPANGroupNo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_new_TapAPISpanMarginQryRsp__SWIG_0___")]
+  public static extern global::System.IntPtr new_TapAPISpanMarginQryRsp__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_new_TapAPISpanMarginQryRsp__SWIG_1___")]
+  public static extern global::System.IntPtr new_TapAPISpanMarginQryRsp__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_delete_TapAPISpanMarginQryRsp___")]
+  public static extern void delete_TapAPISpanMarginQryRsp(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_ITapTradeAPINotify_OnConnect___")]
   public static extern void ITapTradeAPINotify_OnConnect(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
@@ -9720,6 +10059,12 @@ class EsunnyITapApiPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_ITapTradeAPINotify_OnRtnExchangeStateInfoSwigExplicitITapTradeAPINotify___")]
   public static extern void ITapTradeAPINotify_OnRtnExchangeStateInfoSwigExplicitITapTradeAPINotify(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_ITapTradeAPINotify_OnRspQrySpanMargin___")]
+  public static extern void ITapTradeAPINotify_OnRspQrySpanMargin(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, int jarg3, char jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_ITapTradeAPINotify_OnRspQrySpanMarginSwigExplicitITapTradeAPINotify___")]
+  public static extern void ITapTradeAPINotify_OnRspQrySpanMarginSwigExplicitITapTradeAPINotify(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, int jarg3, char jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
+
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_new_ITapTradeAPINotify__SWIG_0___")]
   public static extern global::System.IntPtr new_ITapTradeAPINotify__SWIG_0();
 
@@ -9730,7 +10075,7 @@ class EsunnyITapApiPINVOKE {
   public static extern void delete_ITapTradeAPINotify(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_ITapTradeAPINotify_director_connect___")]
-  public static extern void ITapTradeAPINotify_director_connect(global::System.Runtime.InteropServices.HandleRef jarg1, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_0 delegate0, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_1 delegate1, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_2 delegate2, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_3 delegate3, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_4 delegate4, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_5 delegate5, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_6 delegate6, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_7 delegate7, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_8 delegate8, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_9 delegate9, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_10 delegate10, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_11 delegate11, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_12 delegate12, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_13 delegate13, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_14 delegate14, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_15 delegate15, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_16 delegate16, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_17 delegate17, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_18 delegate18, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_19 delegate19, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_20 delegate20, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_21 delegate21, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_22 delegate22, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_23 delegate23, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_24 delegate24, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_25 delegate25, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_26 delegate26, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_27 delegate27, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_28 delegate28, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_29 delegate29, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_30 delegate30, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_31 delegate31, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_32 delegate32, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_33 delegate33, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_34 delegate34, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_35 delegate35, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_36 delegate36, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_37 delegate37, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_38 delegate38, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_39 delegate39, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_40 delegate40, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_41 delegate41, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_42 delegate42, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_43 delegate43, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_44 delegate44, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_45 delegate45, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_46 delegate46, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_47 delegate47, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_48 delegate48, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_49 delegate49, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_50 delegate50, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_51 delegate51, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_52 delegate52, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_53 delegate53, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_54 delegate54, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_55 delegate55, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_56 delegate56, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_57 delegate57, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_58 delegate58, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_59 delegate59, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_60 delegate60, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_61 delegate61, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_62 delegate62, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_63 delegate63, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_64 delegate64, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_65 delegate65, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_66 delegate66, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_67 delegate67, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_68 delegate68, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_69 delegate69, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_70 delegate70, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_71 delegate71, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_72 delegate72, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_73 delegate73, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_74 delegate74, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_75 delegate75, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_76 delegate76);
+  public static extern void ITapTradeAPINotify_director_connect(global::System.Runtime.InteropServices.HandleRef jarg1, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_0 delegate0, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_1 delegate1, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_2 delegate2, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_3 delegate3, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_4 delegate4, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_5 delegate5, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_6 delegate6, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_7 delegate7, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_8 delegate8, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_9 delegate9, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_10 delegate10, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_11 delegate11, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_12 delegate12, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_13 delegate13, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_14 delegate14, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_15 delegate15, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_16 delegate16, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_17 delegate17, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_18 delegate18, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_19 delegate19, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_20 delegate20, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_21 delegate21, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_22 delegate22, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_23 delegate23, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_24 delegate24, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_25 delegate25, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_26 delegate26, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_27 delegate27, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_28 delegate28, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_29 delegate29, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_30 delegate30, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_31 delegate31, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_32 delegate32, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_33 delegate33, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_34 delegate34, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_35 delegate35, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_36 delegate36, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_37 delegate37, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_38 delegate38, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_39 delegate39, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_40 delegate40, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_41 delegate41, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_42 delegate42, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_43 delegate43, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_44 delegate44, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_45 delegate45, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_46 delegate46, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_47 delegate47, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_48 delegate48, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_49 delegate49, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_50 delegate50, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_51 delegate51, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_52 delegate52, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_53 delegate53, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_54 delegate54, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_55 delegate55, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_56 delegate56, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_57 delegate57, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_58 delegate58, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_59 delegate59, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_60 delegate60, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_61 delegate61, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_62 delegate62, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_63 delegate63, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_64 delegate64, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_65 delegate65, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_66 delegate66, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_67 delegate67, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_68 delegate68, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_69 delegate69, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_70 delegate70, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_71 delegate71, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_72 delegate72, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_73 delegate73, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_74 delegate74, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_75 delegate75, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_76 delegate76, ITapTradeAPINotify.SwigDelegateITapTradeAPINotify_77 delegate77);
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_ITapTradeAPI_SetAPINotify___")]
   public static extern int ITapTradeAPI_SetAPINotify(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -9905,6 +10250,9 @@ class EsunnyITapApiPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_ITapTradeAPI_QryExchangeStateInfo___")]
   public static extern int ITapTradeAPI_QryExchangeStateInfo(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_ITapTradeAPI_QrySpanMargin___")]
+  public static extern int ITapTradeAPI_QrySpanMargin(global::System.Runtime.InteropServices.HandleRef jarg1, ref uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("EsunnyITapApi", EntryPoint="CSharp_EsunnyITapfNet_delete_ITapTradeAPI___")]
   public static extern void delete_ITapTradeAPI(global::System.Runtime.InteropServices.HandleRef jarg1);

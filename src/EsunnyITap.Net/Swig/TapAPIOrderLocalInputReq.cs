@@ -407,6 +407,16 @@ public class TapAPIOrderLocalInputReq : global::System.IDisposable {
     } 
   }
 
+  public string TradeNo {
+    set {
+      EsunnyITapApiPINVOKE.TapAPIOrderLocalInputReq_TradeNo_set(swigCPtr, value);
+    } 
+    get {
+      string ret = EsunnyITapApiPINVOKE.TapAPIOrderLocalInputReq_TradeNo_get(swigCPtr);
+      return ret;
+    } 
+  }
+
   public TapAPIOrderLocalInputReq() : this(EsunnyITapApiPINVOKE.new_TapAPIOrderLocalInputReq__SWIG_0(), true) {
   }
 

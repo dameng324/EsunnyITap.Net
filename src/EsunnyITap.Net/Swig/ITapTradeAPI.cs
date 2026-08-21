@@ -347,6 +347,11 @@ public class ITapTradeAPI : global::System.IDisposable {
     return ret;
   }
 
+  public virtual int QrySpanMargin(ref uint sessionID, TapAPISpanMarginQryReq qryReq) {
+    int ret = EsunnyITapApiPINVOKE.ITapTradeAPI_QrySpanMargin(swigCPtr, ref sessionID, TapAPISpanMarginQryReq.getCPtr(qryReq));
+    return ret;
+  }
+
 }
 
 }

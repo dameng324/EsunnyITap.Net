@@ -714,6 +714,16 @@ namespace ITapTrade
 		* @ingroup G_T_TradeSystem
 		*/
 		virtual  void TAP_CDECL  OnRtnExchangeStateInfo(const ITapTrade::TapAPIExchangeStateInfoAddNotice* info) {};
+		/**
+		* @brief SPAN保证金查询应答
+		* @param[in] sessionID 请求的会话ID；
+		* @param[in] errorCode 错误码。0 表示成功。
+		* @param[in] isLast 	标示是否是最后一批数据
+		* @param[in] info		指向返回的信息结构体。当errorCode不为0时，info为空。
+		* @attention 不要修改和删除info所指示的数据；函数调用结束，参数不再有效。
+		* @ingroup G_T_SpanMargin
+		*/
+		virtual void TAP_CDECL OnRspQrySpanMargin(ITapTrade::TAPIUINT32 sessionID, ITapTrade::TAPIINT32 errorCode, ITapTrade::TAPIYNFLAG isLast, const ITapTrade::TapAPISpanMarginQryRsp* info) {};
 	};
 
 
@@ -1404,6 +1414,17 @@ namespace ITapTrade
 		* @ingroup G_T_TradeSystem
 		*/
 		virtual  ITapTrade::TAPIINT32 TAP_CDECL QryExchangeStateInfo(TAPIUINT32* sessionID, const TapAPIExchangeStateInfoQryReq *qryReq) = 0;
+		/**
+		* @brief SPAN保证金查询请求
+		* @details	相同请求查询间隔为60秒
+		* @param[out] sessionID 返回请求的会话ID;
+		* @param[in]	Req	SPAN保证金查询请求的结构体指针
+		* @retval 0 请求成功
+		* @retval 非0 错误码
+		* @note 异步操作
+		* @ingroup G_T_SpanMargin
+		*/
+		virtual ITapTrade::TAPIINT32 TAP_CDECL QrySpanMargin(ITapTrade::TAPIUINT32* sessionID, const ITapTrade::TapAPISpanMarginQryReq* qryReq) = 0;
 
 
 	};

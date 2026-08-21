@@ -365,6 +365,10 @@ public class ITapTradeAPINotify : global::System.IDisposable {
 
   }
 
+  public virtual void OnRspQrySpanMargin(uint sessionID, int errorCode, char isLast, TapAPISpanMarginQryRsp info) {
+
+  }
+
   public ITapTradeAPINotify() : this(EsunnyITapApiPINVOKE.new_ITapTradeAPINotify__SWIG_0(), true) {
     SwigDirectorConnect();
   }
@@ -529,43 +533,11 @@ public class ITapTradeAPINotify : global::System.IDisposable {
       swigDelegate75 = new SwigDelegateITapTradeAPINotify_75(SwigDirectorMethodOnRspQryExchangeStateInfo);
     
       swigDelegate76 = new SwigDelegateITapTradeAPINotify_76(SwigDirectorMethodOnRtnExchangeStateInfo);
-    EsunnyITapApiPINVOKE.ITapTradeAPINotify_director_connect(swigCPtr, swigDelegate0, swigDelegate1, swigDelegate2, swigDelegate3, swigDelegate4, swigDelegate5, swigDelegate6, swigDelegate7, swigDelegate8, swigDelegate9, swigDelegate10, swigDelegate11, swigDelegate12, swigDelegate13, swigDelegate14, swigDelegate15, swigDelegate16, swigDelegate17, swigDelegate18, swigDelegate19, swigDelegate20, swigDelegate21, swigDelegate22, swigDelegate23, swigDelegate24, swigDelegate25, swigDelegate26, swigDelegate27, swigDelegate28, swigDelegate29, swigDelegate30, swigDelegate31, swigDelegate32, swigDelegate33, swigDelegate34, swigDelegate35, swigDelegate36, swigDelegate37, swigDelegate38, swigDelegate39, swigDelegate40, swigDelegate41, swigDelegate42, swigDelegate43, swigDelegate44, swigDelegate45, swigDelegate46, swigDelegate47, swigDelegate48, swigDelegate49, swigDelegate50, swigDelegate51, swigDelegate52, swigDelegate53, swigDelegate54, swigDelegate55, swigDelegate56, swigDelegate57, swigDelegate58, swigDelegate59, swigDelegate60, swigDelegate61, swigDelegate62, swigDelegate63, swigDelegate64, swigDelegate65, swigDelegate66, swigDelegate67, swigDelegate68, swigDelegate69, swigDelegate70, swigDelegate71, swigDelegate72, swigDelegate73, swigDelegate74, swigDelegate75, swigDelegate76);
+    
+      swigDelegate77 = new SwigDelegateITapTradeAPINotify_77(SwigDirectorMethodOnRspQrySpanMargin);
+    EsunnyITapApiPINVOKE.ITapTradeAPINotify_director_connect(swigCPtr, swigDelegate0, swigDelegate1, swigDelegate2, swigDelegate3, swigDelegate4, swigDelegate5, swigDelegate6, swigDelegate7, swigDelegate8, swigDelegate9, swigDelegate10, swigDelegate11, swigDelegate12, swigDelegate13, swigDelegate14, swigDelegate15, swigDelegate16, swigDelegate17, swigDelegate18, swigDelegate19, swigDelegate20, swigDelegate21, swigDelegate22, swigDelegate23, swigDelegate24, swigDelegate25, swigDelegate26, swigDelegate27, swigDelegate28, swigDelegate29, swigDelegate30, swigDelegate31, swigDelegate32, swigDelegate33, swigDelegate34, swigDelegate35, swigDelegate36, swigDelegate37, swigDelegate38, swigDelegate39, swigDelegate40, swigDelegate41, swigDelegate42, swigDelegate43, swigDelegate44, swigDelegate45, swigDelegate46, swigDelegate47, swigDelegate48, swigDelegate49, swigDelegate50, swigDelegate51, swigDelegate52, swigDelegate53, swigDelegate54, swigDelegate55, swigDelegate56, swigDelegate57, swigDelegate58, swigDelegate59, swigDelegate60, swigDelegate61, swigDelegate62, swigDelegate63, swigDelegate64, swigDelegate65, swigDelegate66, swigDelegate67, swigDelegate68, swigDelegate69, swigDelegate70, swigDelegate71, swigDelegate72, swigDelegate73, swigDelegate74, swigDelegate75, swigDelegate76, swigDelegate77);
   }
-
-  private bool SwigDerivedClassHasMethod(string methodName, global::System.Type[] methodTypes) {
-    global::System.Reflection.MethodInfo[] methodInfos = this.GetType().GetMethods(
-        global::System.Reflection.BindingFlags.Public | global::System.Reflection.BindingFlags.NonPublic | global::System.Reflection.BindingFlags.Instance);
-    foreach (global::System.Reflection.MethodInfo methodInfo in methodInfos) {
-      if (methodInfo.DeclaringType == null)
-        continue;
-
-      if (methodInfo.Name != methodName)
-        continue;
-
-      var parameters = methodInfo.GetParameters();
-      if (parameters.Length != methodTypes.Length)
-        continue;
-
-      bool parametersMatch = true;
-      for (var i = 0; i < parameters.Length; i++) {
-        if (parameters[i].ParameterType != methodTypes[i]) {
-          parametersMatch = false;
-          break;
-        }
-      }
-
-      if (!parametersMatch)
-        continue;
-
-      if (methodInfo.IsVirtual && (methodInfo.DeclaringType.IsSubclassOf(typeof(ITapTradeAPINotify))) &&
-        methodInfo.DeclaringType != methodInfo.GetBaseDefinition().DeclaringType) {
-        return true;
-      }
-    }
-
-    return false;
-  }
-
+  
   private void SwigDirectorMethodOnConnect(string HostAddress) {
     OnConnect(HostAddress);
   }
@@ -874,6 +846,10 @@ public class ITapTradeAPINotify : global::System.IDisposable {
     OnRtnExchangeStateInfo((info == global::System.IntPtr.Zero) ? null : new TapAPIExchangeStateInfoQryRsp(info, false));
   }
 
+  private void SwigDirectorMethodOnRspQrySpanMargin(uint sessionID, int errorCode, char isLast, global::System.IntPtr info) {
+    OnRspQrySpanMargin(sessionID, errorCode, isLast, (info == global::System.IntPtr.Zero) ? null : new TapAPISpanMarginQryRsp(info, false));
+  }
+
   public delegate void SwigDelegateITapTradeAPINotify_0(string HostAddress);
   public delegate void SwigDelegateITapTradeAPINotify_1(int errorCode, global::System.IntPtr loginRspInfo);
   public delegate void SwigDelegateITapTradeAPINotify_2(int errorCode, char isLast, string ContactInfo);
@@ -951,6 +927,7 @@ public class ITapTradeAPINotify : global::System.IDisposable {
   public delegate void SwigDelegateITapTradeAPINotify_74(uint sessionID, int errorCode);
   public delegate void SwigDelegateITapTradeAPINotify_75(uint sessionID, int errorCode, char isLast, global::System.IntPtr info);
   public delegate void SwigDelegateITapTradeAPINotify_76(global::System.IntPtr info);
+  public delegate void SwigDelegateITapTradeAPINotify_77(uint sessionID, int errorCode, char isLast, global::System.IntPtr info);
 
   private SwigDelegateITapTradeAPINotify_0 swigDelegate0;
   private SwigDelegateITapTradeAPINotify_1 swigDelegate1;
@@ -1029,6 +1006,7 @@ public class ITapTradeAPINotify : global::System.IDisposable {
   private SwigDelegateITapTradeAPINotify_74 swigDelegate74;
   private SwigDelegateITapTradeAPINotify_75 swigDelegate75;
   private SwigDelegateITapTradeAPINotify_76 swigDelegate76;
+  private SwigDelegateITapTradeAPINotify_77 swigDelegate77;
 
   private static global::System.Type[] swigMethodTypes0 = new global::System.Type[] { typeof(string) };
   private static global::System.Type[] swigMethodTypes1 = new global::System.Type[] { typeof(int), typeof(TapAPITradeLoginRspInfo) };
@@ -1107,6 +1085,7 @@ public class ITapTradeAPINotify : global::System.IDisposable {
   private static global::System.Type[] swigMethodTypes74 = new global::System.Type[] { typeof(uint), typeof(int) };
   private static global::System.Type[] swigMethodTypes75 = new global::System.Type[] { typeof(uint), typeof(int), typeof(char), typeof(TapAPIExchangeStateInfoQryRsp) };
   private static global::System.Type[] swigMethodTypes76 = new global::System.Type[] { typeof(TapAPIExchangeStateInfoQryRsp) };
+  private static global::System.Type[] swigMethodTypes77 = new global::System.Type[] { typeof(uint), typeof(int), typeof(char), typeof(TapAPISpanMarginQryRsp) };
 }
 
 }

@@ -677,6 +677,56 @@ public class TapAPIHisOrderQryRsp : global::System.IDisposable {
     } 
   }
 
+  public string ClientLocalIP {
+    set {
+      EsunnyITapApiPINVOKE.TapAPIHisOrderQryRsp_ClientLocalIP_set(swigCPtr, value);
+    } 
+    get {
+      string ret = EsunnyITapApiPINVOKE.TapAPIHisOrderQryRsp_ClientLocalIP_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public string ClientMac {
+    set {
+      EsunnyITapApiPINVOKE.TapAPIHisOrderQryRsp_ClientMac_set(swigCPtr, value);
+    } 
+    get {
+      string ret = EsunnyITapApiPINVOKE.TapAPIHisOrderQryRsp_ClientMac_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public string ClientIP {
+    set {
+      EsunnyITapApiPINVOKE.TapAPIHisOrderQryRsp_ClientIP_set(swigCPtr, value);
+    } 
+    get {
+      string ret = EsunnyITapApiPINVOKE.TapAPIHisOrderQryRsp_ClientIP_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public string SuperiorAccount {
+    set {
+      EsunnyITapApiPINVOKE.TapAPIHisOrderQryRsp_SuperiorAccount_set(swigCPtr, value);
+    } 
+    get {
+      string ret = EsunnyITapApiPINVOKE.TapAPIHisOrderQryRsp_SuperiorAccount_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public string ClientOrderNo {
+    set {
+      EsunnyITapApiPINVOKE.TapAPIHisOrderQryRsp_ClientOrderNo_set(swigCPtr, value);
+    } 
+    get {
+      string ret = EsunnyITapApiPINVOKE.TapAPIHisOrderQryRsp_ClientOrderNo_get(swigCPtr);
+      return ret;
+    } 
+  }
+
   public TapAPIHisOrderQryRsp() : this(EsunnyITapApiPINVOKE.new_TapAPIHisOrderQryRsp__SWIG_0(), true) {
   }
 

@@ -417,6 +417,16 @@ public class TapAPINewOrder : global::System.IDisposable {
     } 
   }
 
+  public string TradeNo {
+    set {
+      EsunnyITapApiPINVOKE.TapAPINewOrder_TradeNo_set(swigCPtr, value);
+    } 
+    get {
+      string ret = EsunnyITapApiPINVOKE.TapAPINewOrder_TradeNo_get(swigCPtr);
+      return ret;
+    } 
+  }
+
   public TapAPINewOrder() : this(EsunnyITapApiPINVOKE.new_TapAPINewOrder__SWIG_0(), true) {
   }
 

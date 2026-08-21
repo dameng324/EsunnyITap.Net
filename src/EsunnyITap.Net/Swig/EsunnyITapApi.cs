@@ -984,9 +984,44 @@ public class EsunnyITapApi {
     } 
   }
 
-  public static int TAIERROR_SPOT_ROOTCOM_TRADEROUTE {
+  public static int TAPIERROR_SPOT_ROOTCOM_TRADEROUTE {
     get {
-      int ret = EsunnyITapApiPINVOKE.TAIERROR_SPOT_ROOTCOM_TRADEROUTE_get();
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_SPOT_ROOTCOM_TRADEROUTE_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_SPOT_POSITIONMAX {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_SPOT_POSITIONMAX_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_MAX_INFO_IN {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_MAX_INFO_IN_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_ORDERQTY_ZERO {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_ORDERQTY_ZERO_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_MAINLAND_NOPEN {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_MAINLAND_NOPEN_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_USER_EXCEED_NO {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_USER_EXCEED_NO_get();
       return ret;
     } 
   }
@@ -1047,16 +1082,16 @@ public class EsunnyITapApi {
     } 
   }
 
-  public static int TAIERROR_ORDERINSERT_BUYLIMITE {
+  public static int TAPIERROR_ORDERINSERT_BUYLIMITE {
     get {
-      int ret = EsunnyITapApiPINVOKE.TAIERROR_ORDERINSERT_BUYLIMITE_get();
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_BUYLIMITE_get();
       return ret;
     } 
   }
 
-  public static int TAIERROR_ORDERINSERT_GROUP_BUYLIMITE {
+  public static int TAPIERROR_ORDERINSERT_GROUP_BUYLIMITE {
     get {
-      int ret = EsunnyITapApiPINVOKE.TAIERROR_ORDERINSERT_GROUP_BUYLIMITE_get();
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_GROUP_BUYLIMITE_get();
       return ret;
     } 
   }
@@ -1124,9 +1159,51 @@ public class EsunnyITapApi {
     } 
   }
 
+  public static int TAPIERROR_ORDERMODIFY_ERROR_BIGER {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERMODIFY_ERROR_BIGER_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERMODIFY_ERROR_OTC {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERMODIFY_ERROR_OTC_get();
+      return ret;
+    } 
+  }
+
   public static int TAPIERROR_ORDERINPUT_CANNOTMOVE {
     get {
       int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINPUT_CANNOTMOVE_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_QFII_OFF {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_QFII_OFF_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_NO_TRADENO {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_NO_TRADENO_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_TRADENO_NOSET {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_TRADENO_NOSET_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_TRADENO_NEEDOFF {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_TRADENO_NEEDOFF_get();
       return ret;
     } 
   }
@@ -1141,6 +1218,41 @@ public class EsunnyITapApi {
   public static int TAPIERROR_CONTRACT_QUOTE {
     get {
       int ret = EsunnyITapApiPINVOKE.TAPIERROR_CONTRACT_QUOTE_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_IN_PRICE_LIMIT_PRICE_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_IN_PRICE_LIMIT_PRICE_ERROR_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_INSERT_PRICE24_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_INSERT_PRICE24_ERROR_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_INSERT_C_PRICE24_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_INSERT_C_PRICE24_ERROR_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_INSERT_CONFIRM_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_INSERT_CONFIRM_ERROR_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_CONFIRM_NOORDER_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_CONFIRM_NOORDER_ERROR_get();
       return ret;
     } 
   }
@@ -1169,6 +1281,41 @@ public class EsunnyITapApi {
   public static int TAPIERROR_ORDERINSERT_POSMAX_COM_NET {
     get {
       int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_POSMAX_COM_NET_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_POSMAX_MARKET_VAL {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_POSMAX_MARKET_VAL_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_STOCKINSERT_HK_ORDERMAX_QTY {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_STOCKINSERT_HK_ORDERMAX_QTY_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_G_POSITIONMAX {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_G_POSITIONMAX_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_G_POSMAX_COM {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_G_POSMAX_COM_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_G_POSMAX_COM_NET {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_G_POSMAX_COM_NET_get();
       return ret;
     } 
   }
@@ -1204,6 +1351,13 @@ public class EsunnyITapApi {
   public static int TAPIERROR_CLOSE_SPOT_OUT_NULL {
     get {
       int ret = EsunnyITapApiPINVOKE.TAPIERROR_CLOSE_SPOT_OUT_NULL_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_CLOSE_ORDER_QFII_NOEH {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_CLOSE_ORDER_QFII_NOEH_get();
       return ret;
     } 
   }
@@ -1502,9 +1656,79 @@ public class EsunnyITapApi {
     } 
   }
 
+  public static int TAPIERROR_ORDER_INSERT_SECTOR_RIGHT_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_INSERT_SECTOR_RIGHT_ERROR_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_INSERT_EXCHGRIGHT_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_INSERT_EXCHGRIGHT_ERROR_get();
+      return ret;
+    } 
+  }
+
   public static int TAPIERROR_ORDERINSERT_LOANAMOUNT {
     get {
       int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_LOANAMOUNT_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_FROZENSTOCK {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_FROZENSTOCK_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_INSERT_BIGER_RIGHT {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_INSERT_BIGER_RIGHT_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_INSERT_EXCEED_RIGHT {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_INSERT_EXCEED_RIGHT_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_INSERT_EXCEED_AMOUNT {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_INSERT_EXCEED_AMOUNT_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_REVIEW_EXCEED_AMOUNT {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_REVIEW_EXCEED_AMOUNT_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERREVIEW_NOTFOUND_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERREVIEW_NOTFOUND_ERROR_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_REVIEW_REFUSE_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_REVIEW_REFUSE_ERROR_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDER_REVIEW_RIGHT_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDER_REVIEW_RIGHT_ERROR_get();
       return ret;
     } 
   }
@@ -1631,6 +1855,83 @@ public class EsunnyITapApi {
   public static int TAPIERROR_ORDERINSERT_MAIN_MARGIN {
     get {
       int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_MAIN_MARGIN_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_OTCT_CBROKERNO_N {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_OTCT_CBROKERNO_N_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_OTCT_CACCOUNTNO_N {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_OTCT_CACCOUNTNO_N_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_OTCT_BUY_CONFIRM {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_OTCT_BUY_CONFIRM_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_OMNIBUS_TRADENO_N {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_OMNIBUS_TRADENO_N_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_ACCBCANSTATE_ERR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_ACCBCANSTATE_ERR_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_ACCBCAN_NO_APY {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_ACCBCAN_NO_APY_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_ACCBCAN_NO_CONFIRM {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_ACCBCAN_NO_CONFIRM_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_GREY_NO_OPEN {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_GREY_NO_OPEN_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_OMNIBUS_ID_ERROR {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_OMNIBUS_ID_ERROR_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_OMNIBUS_ID_ZERO {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_OMNIBUS_ID_ZERO_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_ORDERINSERT_COMMODITY_SUSP {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_ORDERINSERT_COMMODITY_SUSP_get();
       return ret;
     } 
   }
@@ -2048,6 +2349,20 @@ public class EsunnyITapApi {
     } 
   }
 
+  public static int TAPIERROR_TRADEFRONT_FROBIBITDIGITAL {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_TRADEFRONT_FROBIBITDIGITAL_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_TRADEFRONT_MAINLANDONLYCLOSE {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_TRADEFRONT_MAINLANDONLYCLOSE_get();
+      return ret;
+    } 
+  }
+
   public static int TAPIERROR_SUCCEED {
     get {
       int ret = EsunnyITapApiPINVOKE.TAPIERROR_SUCCEED_get();
@@ -2415,6 +2730,27 @@ public class EsunnyITapApi {
   public static int TAPIERROR_RESETPASSWORD_SUCCESS {
     get {
       int ret = EsunnyITapApiPINVOKE.TAPIERROR_RESETPASSWORD_SUCCESS_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_TRADENO_NEEDED {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_TRADENO_NEEDED_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_TRADENO_NOTNEEDED {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_TRADENO_NOTNEEDED_get();
+      return ret;
+    } 
+  }
+
+  public static int TAPIERROR_TRADENO_ERROR_MODIFY {
+    get {
+      int ret = EsunnyITapApiPINVOKE.TAPIERROR_TRADENO_ERROR_MODIFY_get();
       return ret;
     } 
   }
@@ -3385,6 +3721,55 @@ public class EsunnyITapApi {
     } 
   }
 
+  public static char TAPI_ORDER_SOURCE_BLOOMBERG {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_BLOOMBERG_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_AUTOPHONE {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_AUTOPHONE_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_GIVEUP {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_GIVEUP_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_EXERCISE {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_EXERCISE_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_TAKEUP {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_TAKEUP_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_ERRORADJUST {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_ERRORADJUST_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_BROKER_ETRADER {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_BROKER_ETRADER_get();
+      return ret;
+    } 
+  }
+
   public static char TAPI_ORDER_SOURCE_TEMPORARY {
     get {
       char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_TEMPORARY_get();
@@ -3395,6 +3780,41 @@ public class EsunnyITapApi {
   public static char TAPI_ORDER_SOURCE_PROGRAMMANUAL {
     get {
       char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_PROGRAMMANUAL_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_OTC {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_OTC_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_EXCHANGEPHYSICALS {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_EXCHANGEPHYSICALS_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_FUNDREDEMPTION {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_FUNDREDEMPTION_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_POSITIONMAINTFEE {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_POSITIONMAINTFEE_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_ORDER_SOURCE_ORDERER {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_ORDER_SOURCE_ORDERER_get();
       return ret;
     } 
   }
@@ -3808,6 +4228,41 @@ public class EsunnyITapApi {
   public static char TAPI_MATCH_SOURCE_PROGRAMMANUAL {
     get {
       char ret = EsunnyITapApiPINVOKE.TAPI_MATCH_SOURCE_PROGRAMMANUAL_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_MATCH_SOURCE_OTC {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_MATCH_SOURCE_OTC_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_MATCH_SOURCE_EXCHANGEPHYSICALS {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_MATCH_SOURCE_EXCHANGEPHYSICALS_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_MATCH_SOURCE_FUNDREDEMPTION {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_MATCH_SOURCE_FUNDREDEMPTION_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_MATCH_SOURCE_POSITIONMAINTFEE {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_MATCH_SOURCE_POSITIONMAINTFEE_get();
+      return ret;
+    } 
+  }
+
+  public static char TAPI_MATCH_SOURCE_ORDERER {
+    get {
+      char ret = EsunnyITapApiPINVOKE.TAPI_MATCH_SOURCE_ORDERER_get();
       return ret;
     } 
   }
