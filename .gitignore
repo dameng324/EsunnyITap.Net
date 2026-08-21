@@ -402,3 +402,7 @@ FodyWeavers.xsd
 /src/EsunnyITapApi/linux-build
 /src/EsunnyITapApi/win-build
 *.local
+/src/EsunnyITapApi/linux-build
+/src/EsunnyITapApi/win-build
+src/EsunnyITapApi/swig_wrap.cxx
+src/EsunnyITapApi/swig_wrap.h
