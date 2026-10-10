@@ -1,169 +1,110 @@
-# EsunnyTap.Net
+# EsunnyITap.Net
 
 [![NuGet](https://img.shields.io/nuget/v/EsunnyITap.Net.svg)](https://www.nuget.org/packages/EsunnyITap.Net)
+[![CI](https://github.com/dameng324/EsunnyITap.Net/actions/workflows/ci.yml/badge.svg)](https://github.com/dameng324/EsunnyITap.Net/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 [English](ReadMe.en.md) | [中文](ReadMe.md)
 
-EsunnyITap.Net is a .NET library for the EsunnyITap Futures API which is popular worldwide future market trade api in China. 
-This project is a wrapper of the EsunnyITap C++ API using swig.
+A .NET wrapper for the Esunny iTap foreign futures trading API. For market data, use [EsunnyTap.Net](https://github.com/dameng324/EsunnyTap.Net). SWIG generates the C# bindings, and the NuGet package includes native libraries for the supported runtimes.
 
-Please read FAQ before using this library.[FAQ](#faq)
+## Supported targets
 
-## Features
+| Item | Support |
+|---|---|
+| .NET targets | .NET 8, .NET 10, .NET Framework 4.5, .NET Standard 2.0 |
+| Native runtimes | Windows x64 (win-x64), Linux x64 (linux-x64) |
+| API | Foreign futures trading |
 
-- Support EsunnyITap Trade API, for quote, use [EsunnyTap.Net](https://github.com/dameng324/EsunnyTap.Net)
-- Support .Net framework 4.5 and .Net Standard 2.0 and Modern .Net6 and .Net8
-- Auto copy the native dlls to the output directory
-- Native AOT support
-- Support Windows x64 and Linux x64 
+The .NET 8 and .NET 10 targets declare IsAotCompatible=true. Applications still need a native library for their target RID.
 
-## FAQ
+## Install
 
-### The version of the EsunnyITap API?
-
-ITapTradeAPIVersion:Version iTapTradeAPI V9.3.9.10, Date 2025.03.20
-
-### dll doesn't copy to the output directory?
-
-set `RuntimeIdentifier` to `win-x64` in the project file.
-
-### went to encoding issue?
-
-try add the following code before using the API
-
-```csharp
-SwigStringHelper.Register();
-```
-
-## Installation
-
-```bash
+~~~bash
 dotnet add package EsunnyITap.Net
-```
+~~~
 
-## Usage
+## Quick start
 
-```csharp
-using System.Threading.Tasks;
+Use the authorization code issued by Esunny. This example contains placeholders only.
+
+~~~csharp
+using System;
 using EsunnyITap.Net;
 
-Console.WriteLine($"ITapTradeAPIVersion:{EsunnyITapApi.GetITapTradeAPIVersion()}");
+SwigStringHelper.Register();
 
-int ret = 0;
-var api = EsunnyITapApi.CreateITapTradeAPI(
-    new TapAPIApplicationInfo()
-    {
-        AuthCode =
-            "67EA896065459BECDFDB924B29CB7DF1946CED32E26C1EAC946CED32E26C1EAC946CED32E26C1EAC946CED32E26C1EAC5211AF9FEE541DDE41BCBAB68D525B0D111A0884D847D57163FF7F329FA574E7946CED32E26C1EAC946CED32E26C1EAC733827B0CE853869ABD9B8F170E14F8847D3EA0BF4E191F5D97B3DFE4CCB1F01842DD2B3EA2F4B20CAD19B8347719B7E20EA1FA7A3D1BFEFF22290F4B5C43E6C520ED5A40EC1D50ACDF342F46A92CCF87AEE6D73542C42EC17818349C7DEDAB0E4DB16977714F873D505029E27B3D57EB92D5BEDA0A710197EB67F94BB1892B30F58A3F211D9C3B3839BE2D73FD08DD776B9188654853DDA57675EBB7D6FBBFC",
-        KeyOperationLogPath = "./",
-    },
-    ref ret
-);
-if (ret != 0)
+var appInfo = new TapAPIApplicationInfo
 {
-    Console.WriteLine($"CreateTapTradeAPI failed ret:{ret} {ErrorCodeMap.GetErrorMsg(ret)}");
-    return;
+    AuthCode = "<vendor-issued-auth-code>",
+    KeyOperationLogPath = "./",
+};
+
+var result = 0;
+var api = EsunnyITapApi.CreateITapTradeAPI(appInfo, ref result);
+if (result != 0)
+{
+    throw new InvalidOperationException(
+        "CreateITapTradeAPI failed: " + ErrorCodeMap.GetErrorMsg(result)
+    );
 }
 
-var tradeSpi = new TradeImpl();
-ret = api.SetAPINotify(tradeSpi);
-if (ret != 0)
-{
-    Console.WriteLine($"SetAPINotify failed ret:{ret}");
-    return;
-}
-ret = api.SetHostAddress("123.161.206.213", 8383);
-if (ret != 0)
-{
-    Console.WriteLine($"SetHostAddress failed ret:{ret}");
-    return;
-}
-ret = api.Login(new TapAPITradeLoginAuth
-{
-    ISModifyPassword = EsunnyITapApi.APIYNFLAG_NO,
-    UserNo = "Q123456789",
-    Password = "123456",
-});
-if (ret != 0)
-{
-    Console.WriteLine($"Login failed ret:{ret}");
-    return;
-}
-await Task.Delay(100000);
+// Register an ITapTradeAPINotify implementation, set the front address, then log in.
+~~~
 
-public class TradeImpl : EsunnyITap.Net.ITapTradeAPINotify
-{
-    public override void OnConnect(string HostAddress)
-    {
-        Console.WriteLine($"OnConnect HostAddress:{HostAddress}");
-    }
+Call SwigStringHelper.Register() before using the API if callback strings need Chinese text conversion.
 
-    public override void OnRspLogin(int errorCode, TapAPITradeLoginRspInfo loginRspInfo)
-    {
-        Console.WriteLine($"OnRspLogin errorCode:{errorCode} loginRspInfo:{loginRspInfo}");
-    }
+## API version
 
-    public override void OnDisconnect(int reasonCode)
-    {
-        Console.WriteLine($"OnDisconnect reasonCode:{reasonCode}");
-    }
+The included iTapTradeAPI version is V9.3.9.10, dated 2025-03-20.
 
-    public override void OnAPIReady(int errorCode)
-    {
-        Console.WriteLine($"OnAPIReady errorCode:{errorCode}");
-    }
-}
-```
+## Native libraries
+
+The NuGet package contains native libraries under:
+
+- Windows x64: runtimes/win-x64/native
+- Linux x64: runtimes/linux-x64/native
+
+Set the application RuntimeIdentifier to win-x64 or linux-x64 when publishing for a specific platform.
 
 ## Build
 
-### Requirements
+### Requirements and local build
 
-Use the .NET SDK pinned in `global.json` and restore the repository tools:
+- Use the .NET SDK pinned by global.json and run dotnet tool restore from the repository root.
+- Use the SWIG version recorded in .swig-version.
+- Linux SWIG generation requires gawk and uchardet. Native builds require CMake and the matching C++ toolchain. Use Git Bash and Visual Studio C++ tools for Windows; Linux builds can run on Linux or WSL2.
 
-```bash
-dotnet tool restore
-```
+Generated C# and C++ SWIG files are not tracked in Git. Regenerate them before a local build:
 
-SWIG must match the version in `.swig-version` (currently 4.5.1). CI runs SWIG generation on Ubuntu 24.04 and requires `gawk` and `uchardet`. Windows native builds use CMake 4.3 or later with Visual Studio 2026.
-
-### Build the solution
-
-```bash
-dotnet build EsunnyITap.Net.slnx --configuration Release
-```
-
-### Regenerate SWIG bindings
-
-From Ubuntu 24.04 in WSL2, run:
-
-```bash
+~~~bash
 cd src/EsunnyITapApi
-dotnet tool restore
 bash ./SwigGenerate.sh
-```
+~~~
 
-This regenerates the C++ and C# wrappers, applies the shared C# post-processing, and formats the generated C# files.
+Build the Windows native library from Git Bash; build the Linux library on Linux or WSL2:
 
-### Build native wrappers
-
-Build the Windows wrapper from Git Bash and the Linux wrapper from WSL2. Run these commands from `src/EsunnyITapApi`:
-
-```bash
+~~~bash
 bash ./win-build.sh
 bash ./linux-build.sh
-```
+~~~
 
+Return to the repository root to build the solution and check formatting:
+
+~~~bash
+cd ../..
+dotnet build EsunnyITap.Net.slnx --configuration Release
+dotnet tool run csharpier check .
+~~~
 
 ### GitHub Actions
 
-Pull requests and pushes to `main` run the Linux generation job followed by the Windows build job. The Linux job uploads generated C# files, SWIG wrapper sources, and the Linux native library when the SDK provides one. A `vX.Y.Z` tag publishes the NuGet package and creates a GitHub Release. Manual publishing runs from `main` and requires a version without the `v` prefix.
+Pull requests and pushes to main run ci.yml, which calls the shared build.yml. The Ubuntu job generates SWIG bindings and the Linux native library; the Windows job builds the Windows native library and NuGet package. CI uploads the nupkg as a workflow artifact for 30 days and does not publish it to NuGet.
 
-## Donate
-If this project help you, please feel free to donate me:
-
-![img.png](img.png)
+publish.yml uses the same build workflow. A v-prefixed version tag publishes the package and creates a GitHub Release. You can also run the workflow manually from main and enter the version without the v prefix.
 
 ## License
 
-MIT License
+[MIT License](LICENSE)
+
+For questions and bug reports, open a [GitHub issue](https://github.com/dameng324/EsunnyITap.Net/issues).
