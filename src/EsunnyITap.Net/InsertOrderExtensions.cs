@@ -13,12 +13,7 @@ public static class InsertOrderExtensions
 
     public static int InsertHKMarketOrder2(this ITapTradeAPI api, ref uint sessionID, TapAPIOrderMarketInsertReq order)
     {
-        return api.InsertHKMarketOrder(
-            ref sessionID,
-            new SWIGTYPE_p_a_51__char(IntPtr.Zero, futureUse: false),
-            new SWIGTYPE_p_a_51__char(IntPtr.Zero, futureUse: false),
-            order
-        );
+        return api.InsertHKMarketOrder(ref sessionID, new SWIGTYPE_p_a_51__char(IntPtr.Zero, futureUse: false), new SWIGTYPE_p_a_51__char(IntPtr.Zero, futureUse: false), order);
     }
 
     public static int InsertSpecialOrder2(this ITapTradeAPI api, ref uint sessionID, TapAPISpecialOrderInsertReq order)

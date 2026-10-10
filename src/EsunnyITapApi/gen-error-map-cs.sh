@@ -14,7 +14,7 @@ public static class ErrorCodeMap
     {
 EOF
 
-awk '
+gawk '
     # 如果这一行是注释（支持 //! 或 //）
     /^\s*\/\// {
         line=$0

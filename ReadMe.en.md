@@ -115,8 +115,51 @@ public class TradeImpl : EsunnyITap.Net.ITapTradeAPINotify
 }
 ```
 
-## Donate
+## Build
 
+### Requirements
+
+Use the .NET SDK pinned in `global.json` and restore the repository tools:
+
+```bash
+dotnet tool restore
+```
+
+SWIG must match the version in `.swig-version` (currently 4.5.1). CI runs SWIG generation on Ubuntu 24.04 and requires `gawk` and `uchardet`. Windows native builds use CMake 4.3 or later with Visual Studio 2026.
+
+### Build the solution
+
+```bash
+dotnet build EsunnyITap.Net.slnx --configuration Release
+```
+
+### Regenerate SWIG bindings
+
+From Ubuntu 24.04 in WSL2, run:
+
+```bash
+cd src/EsunnyITapApi
+dotnet tool restore
+bash ./SwigGenerate.sh
+```
+
+This regenerates the C++ and C# wrappers, applies the shared C# post-processing, and formats the generated C# files.
+
+### Build native wrappers
+
+Build the Windows wrapper from Git Bash and the Linux wrapper from WSL2. Run these commands from `src/EsunnyITapApi`:
+
+```bash
+bash ./win-build.sh
+bash ./linux-build.sh
+```
+
+
+### GitHub Actions
+
+Pull requests and pushes to `main` run the Linux generation job followed by the Windows build job. The Linux job uploads generated C# files, SWIG wrapper sources, and the Linux native library when the SDK provides one. A `vX.Y.Z` tag publishes the NuGet package and creates a GitHub Release. Manual publishing runs from `main` and requires a version without the `v` prefix.
+
+## Donate
 If this project help you, please feel free to donate me:
 
 ![img.png](img.png)

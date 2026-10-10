@@ -145,16 +145,9 @@ public class TradeImpl : EsunnyITap.Net.ITapTradeAPINotify
         OnAPIReadySubject.OnNext(errorCode);
     }
 
-    public override void OnRspOrderAction(uint sessionID, int errorCode, TapAPIOrderActionRsp info)
-    {
-    }
+    public override void OnRspOrderAction(uint sessionID, int errorCode, TapAPIOrderActionRsp info) { }
 
-    public override void OnRspOrderLocalInput(uint sessionID, int errorCode, TapAPIOrderInfo info)
-    {
-        
-    }
+    public override void OnRspOrderLocalInput(uint sessionID, int errorCode, TapAPIOrderInfo info) { }
 
-    public override void OnRtnOrder(TapAPIOrderInfoNotice info)
-    {
-    }
+    public override void OnRtnOrder(TapAPIOrderInfoNotice info) { }
 }

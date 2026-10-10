@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/items/">
+    <File Path=".csharpierrc.json" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="global.json" />
+    <File Path="ReadMe.en.md" />
+    <File Path="ReadMe.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/EsunnyITap.Net/EsunnyITap.Net.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EsunnyITap.Demo/EsunnyITap.Demo.csproj" />
+  </Folder>
+</Solution>
