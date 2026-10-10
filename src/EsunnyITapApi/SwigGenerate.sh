@@ -11,6 +11,8 @@ if [[ "$ACTUAL_SWIG_VERSION" != "$EXPECTED_SWIG_VERSION" ]]; then
 fi
 
 bash convert-header-to-utf8.sh ./include
+rm -rf ../EsunnyITap.Net/Swig/
+rm -f swig_wrap.cxx swig_wrap.h
 mkdir -p ../EsunnyITap.Net/Swig/
 swig -c++ -csharp -namespace EsunnyITap.Net -outdir ../EsunnyITap.Net/Swig/ swig.i
 dotnet StripSwigDerivedChecks.cs -- --no-backup \
